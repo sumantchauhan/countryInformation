@@ -1,0 +1,22 @@
+
+  <div class="container">
+    <input type="text" id="input" [(ngModel)] ="countryName" (keyup)="countryNameText($event)" placeholder="Search for countries..." autofocus/>
+    <div *ngIf="countriesList">
+      <div *ngFor="let list of countriesList">
+      <div class="searchData" (click)="clicked($event,list)">
+        <div class="name">
+          <p>{{list.name}}</p>
+        </div>
+        <div class="flag">
+        <img [src]="list.flagUrl" alt={{list.name}}>
+        </div>
+          <div class="compare" *ngIf="showCountryDetail && countryDetail.name !==list.name">
+            <button (click)="compare($event,list)" class="button">compare</button>
+            </div>
+        </div>
+
+      </div>
+      <app-country-details *ngIf="showCountryDetail" [details]="countryDetail"></app-country-details>
+      <app-country-details *ngIf="showComparedCountryDetails" [comparedDetails]="comparedCountryDetails"></app-country-details>
+     </div>
+  </div>

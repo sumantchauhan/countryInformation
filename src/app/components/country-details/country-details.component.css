@@ -1,0 +1,20 @@
+.countryDetailHeader{
+  align-items: center;
+  width: '100%';
+  background-color: grey;
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+

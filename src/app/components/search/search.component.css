@@ -1,0 +1,59 @@
+.container{
+  padding:0px 100px;
+  width: "100%";
+}
+
+#input{
+  width: "100%";
+  border: 1px solid #ccc;
+  padding: 10px;
+  font: 1.5em 'Arimo', sans-serif;
+  width: 100%;
+  outline: none;
+}
+
+#input:focus {
+  border-color : rgba(81, 203, 238, 1);
+}
+
+.searchData{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.name{
+  flex: 8;
+}
+
+.flag{
+  flex: 2;
+}
+.compare{
+  padding-top: 5px;
+}
+
+.button {
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .container{
+    padding: 0px;
+  }
+  .button{
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,78 @@
+<div *ngIf="currentDetails">
+  <div class="countryDetailHeader">
+    <h1 style="align-self: center;">{{currentDetails.name}}</h1>
+  </div>
+  <table style="width:100%">
+    <tr>
+      <th>Country Name</th>
+      <td>{{currentDetails.name}}</td>
+    </tr>
+    <tr>
+      <th>Flag</th>
+      <td>
+        <img height="50" width="100" src="{{currentDetails.flag}}" alt={{currentDetails.name}}>
+      </td>
+    </tr>
+    <tr>
+      <th>Calling Codes</th>
+      <td>{{currentDetails.callingCodes}}</td>
+    </tr>
+    <tr>
+      <th>Capital</th>
+      <td>{{currentDetails.capital}}</td>
+    </tr>
+    <tr>
+      <th>Region</th>
+      <td>{{currentDetails.region}}</td>
+    </tr>
+    <tr>
+      <th>Subregion</th>
+      <td>{{currentDetails.subregion}}</td>
+    </tr>
+    <tr>
+      <th>Population</th>
+      <td>{{currentDetails.population}}</td>
+    </tr>
+  </table>
+</div>
+
+
+<div *ngIf="secondCountryDetails">
+  <div class="countryDetailHeader">
+    <h1 style="align-self: center;">{{secondCountryDetails.name}}</h1>
+  </div>
+  <table style="width:100%">
+    <tr>
+      <th>Country Name</th>
+      <td>{{secondCountryDetails.name}}</td>
+    </tr>
+    <tr>
+      <th>Flag</th>
+      <td>
+        <img height="50" width="100" src="{{secondCountryDetails.flag}}" alt={{secondCountryDetails.name}}>
+      </td>
+    </tr>
+    <tr>
+      <th>Calling Codes</th>
+      <td>{{secondCountryDetails.callingCodes}}</td>
+    </tr>
+    <tr>
+      <th>Capital</th>
+      <td>{{secondCountryDetails.capital}}</td>
+    </tr>
+    <tr>
+      <th>Region</th>
+      <td>{{secondCountryDetails.region}}</td>
+    </tr>
+    <tr>
+      <th>Subregion</th>
+      <td>{{secondCountryDetails.subregion}}</td>
+    </tr>
+    <tr>
+      <th>Population</th>
+      <td>{{secondCountryDetails.population}}</td>
+    </tr>
+  </table>
+</div>
+
+
